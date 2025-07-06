@@ -1,0 +1,86 @@
+{
+  "questions": [
+    {
+      "description": "Faktorkan persamaan x^2 - 4.",
+      "level": "SMA",
+      "material": "Geometri",
+      "options": [
+        {
+          "text": "(x-2)(x-2)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x+2)(x-2)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x+2)(x+2)",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswerIndex": 2,
+      "id": "q2"
+    },
+    {
+      "id": "q3",
+      "description": "Jika lingkaran memiliki jari-jari 7, berapakah kelilingnya? (Gunakan π = 22/7)",
+      "level": "SMP",
+      "material": "Geometri",
+      "options": [
+        {
+          "text": "22",
+          "isCorrect": false
+        },
+        {
+          "text": "44",
+          "isCorrect": true
+        },
+        {
+          "text": "88",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "id": "eoKtvZdGkfNxq4FgvpboJ",
+      "description": "Turunan Fungsi",
+      "level": "SMA",
+      "material": "Kalkulus",
+      "options": [
+        {
+          "text": "f(x) = 3x² - 2x + 5.",
+          "isCorrect": true
+        },
+        {
+          "text": "f(x) = 3x² - 2x + 6",
+          "isCorrect": false
+        },
+        {
+          "text": "f(x) = 3x² - 5x + 5.",
+          "isCorrect": false
+        },
+        {
+          "text": "f(x) = 2x² - 2x + 5.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswerIndex": 0
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "username": "guru",
+      "password": "password123",
+      "role": "teacher"
+    },
+    {
+      "id": "u2",
+      "username": "siswa",
+      "password": "password123",
+      "role": "student"
+    }
+  ],
+  "results": []
+}

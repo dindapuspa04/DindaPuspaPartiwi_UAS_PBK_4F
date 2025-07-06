@@ -1,0 +1,136 @@
+/* src/assets/style.css - Global Styles */
+
+/* Basic Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0; /* Pastikan ini 0 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%; /* Pastikan ini ada agar min-height: 100vh di body berfungsi */
+    /* overflow: hidden; */ /* Pertimbangkan untuk menghapus ini jika menyebabkan masalah scroll di halaman lain */
+}
+
+/* Hapus atau minimalisir gaya untuk #app di sini jika sudah ada di App.vue */
+/* Jika Anda memiliki #app di sini, pastikan tidak menimpa properti flexbox dari App.vue */
+/* Sebagai contoh, ini yang mungkin Anda miliki, yang perlu Dihapus/Disesuaikan jika ada konflik */
+/*
+#app {
+  max-width: 1280px; // Ini bisa menyebabkan masalah jika LoginView harus 100% lebar
+  margin: 0 auto;    // Ini juga bisa menyebabkan masalah pemusatan
+  padding: 2rem;     // Ini juga akan mendorong konten
+  text-align: center;
+}
+*/
+/* Cukup pastikan tidak ada gaya #app yang mengganggu di sini */
+
+
+/* Common form element styles */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* General page container styles for consistency */
+.page-container {
+    width: 100%; /* Agar bisa mengambil lebar penuh dari main-content-wrapper */
+    max-width: 900px; /* Default max-width */
+    padding: 20px 40px; /* Padding ini yang akan memberikan 'ruang' di dalam container */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Navbar styles (common to many views) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.navbar .breadcrumb {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.navbar .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .user-info .school-name {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.navbar .user-info .user-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+/* Error/Loading messages */
+.loading-indicator, .error-message, .no-data {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.error-message {
+    color: #dc3545;
+}
+
+.success-message {
+    color: #28a745;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
